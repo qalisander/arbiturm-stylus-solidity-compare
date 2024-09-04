@@ -3,3 +3,7 @@
 *.iml
 .idea
 /output
+**/nitro-testnode
+.secrets
+/out/
+/cache/

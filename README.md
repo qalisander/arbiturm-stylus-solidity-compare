@@ -83,3 +83,5 @@ Compiled keccak definitely can beat solidity when called multiple times. For sho
 Caching showed gas optimization from 22% to 5%. The most computationally intensive contract (Hash Storage 1000) had the worst optimization (5%).
 
 Cached tiny keccak hash storage contract that computes hash 1000 times performed 20% worse than its solidity counterpart. But this comparison is a bit unfair since keccak at solidity should be precompiled. Tiny keccak has pure rust implementation.
+
+Precompiled keccak implementation has shown great advantage over the rust native implementation. And should be recommended to use instead of the tiny keccak in smart contracts.
